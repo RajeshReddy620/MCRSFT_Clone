@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Microsoft Navbar Clone</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <style>
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-
     }
-
     .navbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0px 88px;
       background-color: #fff;
-      
       margin-top: 15px;
-    
-
     }
-
     .navbar-left {
       display: flex;
       align-items: center;
       gap: 30px;
     }
-
     .logo {
       display: flex;
       align-items: center;
@@ -44,54 +33,43 @@
       font-weight: 600;
       color: #707070;
     }
-
     .logo img {
       width: 24px;
       height: 24px;
     }
-
     .nav-links {
       display: flex;
-      gap: 20px;
-      
+      gap: 20px; 
     }
-
     .nav-links a {
       text-decoration: none;
       color: #000;
       font-size: 14px;
     }
-
     .nav-links a:hover {
       text-decoration: underline;
     }
-
     .navbar-right {
       display: flex;
       align-items: center;
       gap: 20px;
       font-size: 14px;
     }
-
     .navbar-right select {
       border: none;
       background: none;
     }
-
     .navbar-right select:hover {
       text-decoration: underline;
       cursor: pointer;
     }
-
     .navbar-right a {
       text-decoration: none;
       color: black;
     }
-
     .navbar-right a:hover {
       text-decoration: underline;
     }
-
     .icon {
       background-color: white;
       border: 1.5px solid black;
@@ -106,18 +84,15 @@
       height: 28px;
       margin-top: 20px;
     }
-
     .signin {
       display: flex;
       align-items: center;
       gap: 8px;
     }
-
     .signin i {
       font-size: 30px;
       color: rgba(0, 0, 0, 0.546);
     }
-
     .head {
       display: flex;
       align-items: center;
@@ -126,26 +101,22 @@
       min-height: 500px;
       margin-top: 5px;
     }
-
     .head-image img {
       margin: 0%;
       width: 165%;
       height: 480px;
       background-image: none;
     }
-
     .head-text {
      padding-right: 100px;
       max-width: 500px;
     }
-
     .head-text h1 {
       font-size: 32px;
       font-weight: bold;
       margin-bottom: 20px;
       color: #000;
     }
-
     .head-text p {
       
       font-size: 18px;
@@ -153,7 +124,6 @@
       margin-bottom: 30px;
       line-height: 1.5;
     }
-
     .head-btn {
       background-color: #0067b8;
       color: white;
@@ -164,17 +134,14 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
-
     .head-btn:hover {
       background-color: #005399;
     }
-
     @media (max-width: 900px) {
       .head {
         flex-direction: column;
         text-align: center;
       }
-
       .head-text h1,
       p {
         margin-right: 400px;
@@ -186,12 +153,9 @@
       color: #0165b7;
       font-weight: 550;
     }
-
     .head-text a:hover{
       text-decoration: underline;
     }
-
-    
     .product-row {
       display: flex;
       justify-content: center;
@@ -199,50 +163,37 @@
       gap: 50px;
       padding: 40px 20px;
       background-color: #fff;
-    }
-
-   
+    }   
     .product-item {
       text-align: center;
     }
-
     .product-item i {
       font-size: 36px;
       color: #000;
       margin-bottom: 10px;
     }
-
     .product-item a {
       display: block;
       margin-top: 10px;
       font-size: 16px;
       color: #0075cf;
-
       font-weight: 550;
     }
-
     .product-item a:hover {
       text-decoration: underline;
     }
-
-    
     @media (max-width: 768px) {
       .product-row {
         flex-direction: column;
         gap: 40px;
       }
     }
-
-    
     .card-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 50px 80px;
-      
     }
-
-    
     .card {
       background: white;
       border-radius: 4px;
@@ -252,32 +203,27 @@
       flex-direction: column;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-
     .card:hover {
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
       position: sticky;
     }
-
     .card img {
       width: 100%;
       height: auto;
       display: block;
     }
-
     .card-content {
       padding: 20px;
       flex: 1;
       display: flex;
       flex-direction: column;
     }
-
     .card h3 {
       font-size: 20px;
       font-weight: bold;
       margin: 0 0 12px;
       color: #000;
     }
-
     .card p {
       font-size: 15px;
       color: #333;
@@ -285,7 +231,6 @@
       margin-bottom: 16px;
       line-height: 1.4;
     }
-
     .card button {
       background-color: #0067b8;
       color: white;
@@ -295,13 +240,10 @@
       font-weight: 600;
       border-radius: 2px;
       cursor: pointer;
-      
     }
-
     .card button:hover {
       background-color: #005399;
     }
-
     .Xbox {
       display: flex;
       align-items: center;
@@ -309,37 +251,29 @@
       padding: 60px 70px;
       min-height: 500px;
       margin-top: 5px;
-      
     }
-
     .Xbox-image img {
-      
       width: 28500%;
       height: 500px;
       border: solid rgb(255, 255, 255);
     }
-
     .Xbox-text {
      padding-right: 800px;
      padding-left: 100px;
     }
-
     .Xbox-text h1 {
       font-size: 32px;
       font-weight: bold;
       margin-bottom: 20px;
       color: #000;
     }
-
     .Xbox-text p {
       width: 500px;;
       font-size: 15px;
       color: #333;
       margin-bottom: 30px;
-      line-height: 1.5;
-      
+      line-height: 1.5;      
     }
-
     .Xbox-btn {
       background-color: #0067b8;
       color: white;
@@ -350,17 +284,14 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
-
     .Xbox-btn:hover {
       background-color: #005399;
     }
-
     @media (max-width: 900px) {
       .Xbox {
         flex-direction: column;
         text-align:left;
       }
-
       .Xbox-text h1,
       p {
         margin-right: 400px;
@@ -372,14 +303,11 @@
       color: #0165b7;
       font-weight: 550;
     }
-
     .Xbox-text a:hover{
       text-decoration: underline;
     }
-
     .business h1{
-      margin-left: 5%;
-      
+      margin-left: 5%;      
     }
     .business-section {
       display: flex;
@@ -388,7 +316,6 @@
       padding-left: 80px;
       padding-right: 80px;
     }
-
     .card {
       flex: 1 1 calc(25% - 20px);
       background: #fff;
@@ -398,20 +325,16 @@
       display: flex;
       flex-direction: column;
       min-width: 250px;
-
     }
-
     .card img {
       width: 100%;
       height: auto;
       display: block;
     }
-
     .card-content {
       padding: 16px;
       flex: 1;
     }
-
     .tag {
       display: inline-block;
       background: #ffb900;
@@ -422,19 +345,16 @@
       margin-bottom: 8px;
       max-width: 10%;
     }
-
     .card h2 {
       max-width: 250px;
       font-size: 25px;
       margin: 8px 0;
     }
-
     .card p {
       font-size: 17px;
       color: #333;
       margin-bottom: 16px;
     }
-
     .card a {
       display: inline-block;
       background: #0067b8;
@@ -445,21 +365,12 @@
       border-radius: 2px;
       max-width:max-content;
     }
-
     .card a:hover {
       background: #004a86;
     }
   </style>
 </head>
-
-<body>
-
-  </style>
-  </head>
-
   <body>
-
-    
     <div class="navbar">
       <div class="navbar-left">
         <div class="logo">
@@ -476,7 +387,6 @@
           <a href="">Support</a>
         </div>
       </div>
-
       <div class="navbar-right">
         <select>
           <option>All Microsoft</option>
@@ -486,21 +396,15 @@
         <div class="signin">
           <a href="">Sign in</a>
           <i class="fa-regular fa-circle-user"></i>
-
-
         </div>
       </div>
     </div>
-
-    
     <section class="head">
-      
       <div class="head-image">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Premium-Glass-Icon-Bounce-Homepage:VP5-1920x600"
           alt="Microsoft 365">
       </div>
-
       <div class="head-text">
         <h1>Microsoft 365</h1>
         <p>
@@ -510,9 +414,7 @@
         <button class="head-btn">Discover Microsoft 365 Premium</button><br><br>
         <a href="#"> See other Microsoft 365 options > </a>
       </div>
-
     </section>
-
     <div class="product-row">
       <div class="product-item">
         <i class="fab fa-windows"></i>
@@ -536,10 +438,7 @@
         <a href="#">Explore Surface devices</a>
       </div>
     </div>
-
-    
     <div class="card-container">
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Sapphire-MC001?wid=380&hei=213&fit=crop"
@@ -551,8 +450,6 @@
           <button>Learn more</button>
         </div>
       </div>
-
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop"
@@ -563,8 +460,6 @@
           <button>Download now</button>
         </div>
       </div>
-
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Xbox-Game-Pass-June25?wid=380&hei=213&fit=crop"
@@ -575,8 +470,6 @@
           <button>Join now</button>
         </div>
       </div>
-
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=380&hei=213&fit=crop"
@@ -588,10 +481,7 @@
         </div>
       </div>
     </div>
-
     <section class="Xbox">
-      
-      
       <div class="Xbox-image">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-Hero-Xbox-Series-S:VP5-1596x600"
@@ -603,17 +493,11 @@
           Next-gen performance in the smallest Xbox ever
         </p>
         <button class="Xbox-btn">Shop Xbox Series S</button>
-        
       </div>
-
-
     </section>
-
     <section class="business">
     <h1>For business</h1>
-
     <div class="business-section">
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=380&hei=213&fit=crop"
@@ -626,8 +510,6 @@
           <a href="#">Learn more</a>
         </div>
       </div>
-
-     
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?wid=380&hei=213&fit=crop"
@@ -638,8 +520,6 @@
           <a href="#">Learn more</a>
         </div>
       </div>
-
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Windows-365-Lifestyle-Woman-At-Desk?wid=380&hei=213&fit=crop"
@@ -651,8 +531,6 @@
           <a href="#">Learn more</a>
         </div>
       </div>
-
-      
       <div class="card">
         <img
           src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Azure-AI-Bloom?wid=380&hei=213&fit=crop"
@@ -665,7 +543,5 @@
       </div>
     </div>
     </section>
-
   </body>
-
 </html>
